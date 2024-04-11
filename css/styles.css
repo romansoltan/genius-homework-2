@@ -1,0 +1,219 @@
+/* ========== Fonts ========== */
+
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/play-v19-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v30-latin-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2");
+}
+
+/* ========== Fonts ========== */
+
+/* ========== Css variables ========== */
+
+:root {
+  --primary-c-light: #ffffff;
+  --primary-c-dark: #011c44;
+  --accent-c: #2b7fff;
+  --secondary-c-light: #4a4a4a;
+  --secondary-c-dark: #000000;
+  --secondary-c-grey: #747272;
+}
+
+/* ========== Css variables ========== */
+
+/* ========== Common styles ========== */
+body {
+  color: var(--primary-c-dark);
+  background-color: var(--primary-c-light);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+a {
+  text-decoration: none;
+}
+address {
+  font-style: normal;
+}
+button {
+  cursor: pointer;
+}
+p {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+}
+.section {
+  padding: 48px 0;
+}
+.container {
+  width: 100%;
+  max-width: 1272px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.section-title {
+  font-family: "Play", sans-serif;
+  font-size: 64px;
+  text-align: center;
+}
+.accent-color {
+  color: var(--accent-c);
+}
+/* ========== Common styles ========== */
+
+/* ========== Page-header ========== */
+.menu-link {
+  color: var(--primary-c-dark);
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-c);
+  font-weight: 700;
+}
+/* ========== Page-header ========== */
+
+/* ========== Hero section ==========  */
+.hero-section {
+  padding: 124px 0;
+}
+.hero-subtitle {
+  margin-bottom: 16px;
+}
+.hero-title {
+  margin-bottom: 40px;
+  font-family: "Play", sans-serif;
+  font-size: 140px;
+  line-height: 0.81;
+  text-transform: capitalize;
+  color: var(--accent-c);
+}
+.order-call-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--primary-c-dark);
+  border: 2px solid var(--accent-c);
+  border-radius: 32px;
+  padding: 16px 32px;
+  margin-bottom: 14px;
+}
+.order-call-btn:hover,
+.order-call-btn:focus {
+  color: var(--primary-c-light);
+  background-color: var(--accent-c);
+}
+.hero-text {
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--secondary-c-light);
+}
+/* ========== Hero section ==========  */
+
+/* ========== About section ==========  */
+.about-section .accent-color {
+  text-transform: capitalize;
+}
+.about-text {
+  margin-top: 40px;
+  font-size: 22px;
+  line-height: 1.73;
+}
+.about-text-accent {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+/* ========== About section ==========  */
+
+/* ========== Benefits section ==========  */
+.benefits-section {
+  padding-top: 176px;
+}
+.benefits-section .section-title, 
+.procedure-section .section-title,
+.contacts-section .section-title {
+  margin-bottom: 48px;
+}
+.benefits-list-text {
+  line-height: 1.33;
+  text-align: center;
+  color: var(--secondary-c-dark);
+}
+/* ========== Benefits section ==========  */
+
+/* ========== Procedure section ==========  */
+
+.procedure-list-title {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--primary-c-light);
+}
+/* ========== Procedure section ==========  */
+
+/* ========== Contact section ==========  */
+.contacts-section {
+  padding-bottom: 96px;
+}
+/* ========== Contact section ==========  */
+
+/* ========== Page-footer ========== */
+.page-footer {
+  background-color: var(--primary-c-dark);
+}
+.menu-link.link,
+.address-link {
+  color: var(--primary-c-light);
+  font-size: 16px;
+}
+.address-copyright {
+  font-size: 13px;
+  color: var(--secondary-c-grey);
+}
+/* ========== Page-footer ========== */
