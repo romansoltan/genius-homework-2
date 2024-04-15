@@ -56,6 +56,9 @@
 /* ========== Css variables ========== */
 
 /* ========== Common styles ========== */
+* {
+  box-sizing: border-box;
+}
 body {
   color: var(--primary-c-dark);
   background-color: var(--primary-c-light);
@@ -86,6 +89,8 @@ p {
 }
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 .section {
   padding: 48px 0;
@@ -107,19 +112,41 @@ ul {
 /* ========== Common styles ========== */
 
 /* ========== Page-header ========== */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+.header-menu {
+  display: flex;
+  gap: 56px;
+  flex-grow: 1;
+  justify-content: center;
+}
 .menu-link {
   color: var(--primary-c-dark);
 }
 .menu-link:hover,
 .menu-link:focus {
   color: var(--accent-c);
-  font-weight: 700;
 }
 /* ========== Page-header ========== */
 
 /* ========== Hero section ==========  */
 .hero-section {
   padding: 124px 0;
+}
+.hero-content {
+  max-width: 529px;
+}
+.hero-btn-content {
+  max-width: 238px;
 }
 .hero-subtitle {
   margin-bottom: 16px;
@@ -156,6 +183,17 @@ ul {
 /* ========== Hero section ==========  */
 
 /* ========== About section ==========  */
+.about-container {
+  display: flex;
+  gap: 32px;
+}
+.about-content {
+  max-width: 709px;
+}
+.about-title {
+  max-width: 529px;
+  text-align: left;
+}
 .about-section .accent-color {
   text-transform: capitalize;
 }
@@ -168,16 +206,32 @@ ul {
   font-weight: 600;
   text-transform: capitalize;
 }
+
 /* ========== About section ==========  */
 
 /* ========== Benefits section ==========  */
 .benefits-section {
   padding-top: 176px;
 }
-.benefits-section .section-title, 
+.benefits-section .section-title,
 .procedure-section .section-title,
 .contacts-section .section-title {
   margin-bottom: 48px;
+}
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px;
+}
+.benefits-list-item {
+  flex-basis: calc((100% - 112px) / 3);
+}
+.benefits-card {
+  padding: 24px 32px;
+  border: 1px solid lightgray; /* remove */
+  border-radius: 32px;
+  box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
+  background: #fff;
 }
 .benefits-list-text {
   line-height: 1.33;
