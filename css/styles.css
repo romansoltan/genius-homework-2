@@ -241,7 +241,24 @@ ul {
 /* ========== Benefits section ==========  */
 
 /* ========== Procedure section ==========  */
-
+.procedure-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.procedure-list-item {
+  flex-basis: calc((100% - 32px) / 3);
+}
+.procedure-card {
+  border-radius: 120px 4px;
+  border: 1px solid lightgray; /* remove */
+  background: linear-gradient(
+    180deg,
+    #011c44 47.4%,
+    #011c44 82.66%,
+    #011c44 99.06%
+  );
+}
 .procedure-list-title {
   font-weight: 400;
   font-size: 22px;
