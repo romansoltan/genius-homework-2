@@ -112,6 +112,11 @@ ul {
 /* ========== Common styles ========== */
 
 /* ========== Page-header ========== */
+.page-header {
+  padding: 42px 0;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.25);
+}
 .header-container {
   display: flex;
   align-items: center;
@@ -136,11 +141,26 @@ ul {
 .menu-link:focus {
   color: var(--accent-c);
 }
+.header-social {
+  display: flex;
+  gap: 32px;
+}
+.social-icon {
+  fill: var(--primary-c-dark);
+}
+.social-icon:hover,
+.social-icon:focus {
+  fill: var(--primary-c-light);
+}
 /* ========== Page-header ========== */
 
 /* ========== Hero section ==========  */
 .hero-section {
   padding: 124px 0;
+  background-image: url("../img/hero/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
 }
 .hero-content {
   max-width: 529px;
@@ -286,6 +306,9 @@ ul {
 .address-link {
   color: var(--primary-c-light);
   font-size: 16px;
+}
+.footer-icon {
+  fill: var(--primary-c-light)
 }
 .address-copyright {
   font-size: 13px;
