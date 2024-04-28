@@ -218,6 +218,10 @@ ul {
 .contacts-section .section-title {
   margin-bottom: 48px;
 }
+.benefits-title {
+  max-width: 441px;
+  margin: 0 auto;
+}
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
