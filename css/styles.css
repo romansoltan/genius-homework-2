@@ -141,15 +141,15 @@ ul {
 .menu-link:focus {
   color: var(--accent-c);
 }
-.header-social {
+.header-address {
   display: flex;
   gap: 32px;
 }
-.social-icon {
+.address-icon {
   fill: var(--primary-c-dark);
 }
-.social-icon:hover,
-.social-icon:focus {
+.address-icon:hover,
+.address-icon:focus {
   fill: var(--primary-c-light);
 }
 /* ========== Page-header ========== */
@@ -307,7 +307,7 @@ ul {
   color: var(--primary-c-light);
   font-size: 16px;
 }
-.footer-icon {
+.address-list .address-icon {
   fill: var(--primary-c-light)
 }
 .address-copyright {
