@@ -162,6 +162,9 @@ ul {
   background-size: cover;
   background-position: center top;
 }
+.hero-container {
+  padding-left: 120px;
+}
 .hero-content {
   max-width: 529px;
 }
@@ -208,16 +211,17 @@ ul {
   gap: 32px;
 }
 .about-content {
-  max-width: 709px;
+  flex-basis: 709px;
 }
 .about-title {
   max-width: 529px;
   text-align: left;
+  margin-bottom: 0;
 }
 .about-section .accent-color {
   text-transform: capitalize;
 }
-.about-text {
+.about-text p {
   margin-top: 40px;
   font-size: 22px;
   line-height: 1.73;
@@ -225,6 +229,19 @@ ul {
 .about-text-accent {
   font-weight: 600;
   text-transform: capitalize;
+}
+.about-foto {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex-grow: 1;
+}
+.about-img {
+  border-radius: 50%;
+  box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.2);
+}
+.about-img:last-child {
+  align-self: flex-end;
 }
 
 /* ========== About section ==========  */
@@ -308,7 +325,7 @@ ul {
   font-size: 16px;
 }
 .address-list .address-icon {
-  fill: var(--primary-c-light)
+  fill: var(--primary-c-light);
 }
 .address-copyright {
   font-size: 13px;
