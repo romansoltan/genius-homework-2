@@ -76,6 +76,7 @@ h6 {
   margin-top: 0;
 }
 a {
+  display: inline-block;
   text-decoration: none;
 }
 address {
@@ -212,6 +213,7 @@ ul {
 }
 .about-content {
   flex-basis: 709px;
+  margin-top: 48px;
 }
 .about-title {
   max-width: 529px;
@@ -255,6 +257,9 @@ ul {
 .contacts-section .section-title {
   margin-bottom: 48px;
 }
+.benefits-container {
+  padding: 0 72px;
+}
 .benefits-title {
   max-width: 441px;
   margin: 0 auto;
@@ -282,15 +287,23 @@ ul {
 /* ========== Benefits section ==========  */
 
 /* ========== Procedure section ==========  */
+.procedure-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
 .procedure-list {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  flex-grow: 1;
 }
 .procedure-list-item {
   flex-basis: calc((100% - 32px) / 3);
 }
 .procedure-card {
+  height: 456px;
+  padding: 372px 77px 32px 115px;
   border-radius: 120px 4px;
   border: 1px solid lightgray; /* remove */
   background: linear-gradient(
@@ -304,14 +317,37 @@ ul {
   font-weight: 400;
   font-size: 22px;
   line-height: 1.18;
-  text-align: center;
   color: var(--primary-c-light);
 }
+/* ========== Carousel ==========  */
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  fill: var(--primary-c-light);
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--primary-c-dark);
+  backdrop-filter: blur(15.364535331726074px);
+}
+/* .carousel-button:hover,
+.carousel-button:focus {
+  background-color: var(--primary-c-light);
+  fill: var(--accent-c);
+} */
+/* ========== Carousel ==========  */
 /* ========== Procedure section ==========  */
 
 /* ========== Contact section ==========  */
 .contacts-section {
   padding-bottom: 96px;
+}
+.contact-container {
+  padding: 0 72px;
 }
 /* ========== Contact section ==========  */
 
