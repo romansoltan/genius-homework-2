@@ -338,7 +338,7 @@ ul {
 .carousel-button:focus {
   background-color: var(--accent-c);
   fill: var(--primary-c-light);
-  border: var(--primary-c-light)
+  border: var(--primary-c-light);
 }
 /* ========== Carousel ==========  */
 /* ========== Procedure section ==========  */
@@ -349,6 +349,33 @@ ul {
 }
 .contact-container {
   padding: 0 72px;
+}
+.contact-content {
+  display: flex;
+  gap: 32px;
+}
+.contact-map {
+  flex-grow: 1;
+  flex-shrink: 0;
+  border-radius: 32px;
+}
+.form-container {
+  background: var(--primary-c-dark);
+  border-radius: 32px;
+  background-image: url("../img/contact/background-form.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 48px 56px;
+  flex-grow: 2;
+}
+.form-title {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--primary-c-light);
+  max-width: 276px;
+  margin: 0 auto 32px;
 }
 /* ========== Contact section ==========  */
 
