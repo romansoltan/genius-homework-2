@@ -328,17 +328,18 @@ ul {
   width: 44px;
   height: 44px;
   padding: 0;
-  fill: var(--primary-c-light);
+  fill: var(--primary-c-dark);
   background-color: transparent;
   border-radius: 50%;
   border: 1px solid var(--primary-c-dark);
   backdrop-filter: blur(15.364535331726074px);
 }
-/* .carousel-button:hover,
+.carousel-button:hover,
 .carousel-button:focus {
-  background-color: var(--primary-c-light);
-  fill: var(--accent-c);
-} */
+  background-color: var(--accent-c);
+  fill: var(--primary-c-light);
+  border: var(--primary-c-light)
+}
 /* ========== Carousel ==========  */
 /* ========== Procedure section ==========  */
 
