@@ -382,14 +382,47 @@ ul {
 /* ========== Page-footer ========== */
 .page-footer {
   background-color: var(--primary-c-dark);
+  background-image: url("../img/footer/background-footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 56px 0;
+}
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+.footer-container .page-navigation,
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+.foooter-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+.address-list,
+.address-info {
+  flex-grow: 1;
 }
 .menu-link.link,
 .address-link {
   color: var(--primary-c-light);
   font-size: 16px;
 }
+.menu-link.link:hover,
+.menu-link.link:focus,
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-c);
+}
 .address-list .address-icon {
   fill: var(--primary-c-light);
+}
+.address-list .address-icon:hover,
+.address-list .address-icon:focus {
+  fill: var(--accent-c);
 }
 .address-copyright {
   font-size: 13px;
